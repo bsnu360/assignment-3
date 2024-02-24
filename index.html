@@ -39,7 +39,8 @@
 
 <body class="font-manrope">
   <header>
-    <nav class="container mx-auto mt-4">
+    <!-- navbar section -->
+    <nav class="container mx-auto lg:px-10 px-2 mt-4">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -71,6 +72,44 @@
         </div>
       </div>
     </nav>
+    <!-- slider or carousel -->
+    <div class="container relative mx-auto lg:px-10 px-2 mt-6 lg:mt-14">
+      <div class="carousel w-full h-[70vh] mb-4">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lg:w-[550px] space-y-4 p-4 lg:p-8 bg-custom-black rounded-lg lg:absolute bottom-8 right-16">
+        <h4 class="text-white lg:text-2xl font-extrabold">Meet all the heroes from the field</h4>
+        <p class="text-sm lg:text-base font-medium text-gray-300">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+    </div>
   </header>
   <main>
 
