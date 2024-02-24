@@ -9,9 +9,9 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- manrope google font -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <!-- tailwind custom color -->
   <script>
     tailwind.config = {
@@ -19,6 +19,9 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'custom-black': 'rgb(19, 19, 24)',
+            'custom-grey': 'rgb(66, 66, 71)',
+            'custom-red': 'rgb(255, 66, 64)',
           }
         }
       }
@@ -27,13 +30,54 @@
   <!-- css custom styles -->
   <style>
     .font-manrope {
-      font-family: 'Manrope', sans-serif;
-    }
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
   </style>
 </head>
 
-<body>
+<body class="font-manrope">
+  <header>
+    <nav class="container mx-auto mt-4">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-custom-grey">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost capitalize font-extrabold text-2xl lg:text-4xl text-custom-black">Hockey<span class="text-custom-red">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-custom-grey">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-6">
+          <a class="hidden lg:flex" href="#"><img src="images/search-icon.png" alt=""></a>
+          <a class="btn bg-custom-red lg:px-6 text-white text-[18px] lg:text-xl font-bold border-0 capitalize">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
 
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
